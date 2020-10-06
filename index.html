@@ -1,0 +1,70 @@
+<!DOCTYPE HTML>
+<html lang="en-US">
+<head>
+	<meta charset="UTF-8">
+	<title>Tooltip Design</title>
+
+</head>
+<body>
+<style type="text/css">
+	
+   a{
+		background:tomato;
+		width:100px;
+		padding:10px;
+		font-family:arial black;
+		text-transform:uppercase;
+		color:white;
+		text-decoration:none;
+		text-align:center;
+		border-radius:5px;
+		display:block;
+		position:absolute;
+		top:120px;
+		
+		
+
+	}
+	a span{
+		background:black;
+		color:white;
+		width:140px;
+		padding:5px;
+		font-size:12px;
+		border-radius:10px;
+		position:absolute;
+		text-align:center;
+		top:-41px;
+		left:-2px;
+		visibility:hidden;
+		opacity:0;
+		transition:2s;
+		
+		
+	}
+	
+	a span:before{
+		content:"  ";
+		border-bottom:20px solid black;
+		border-left:20px solid #ff000000;
+		position:absolute;
+		transform:rotate(45deg);
+		top:16px;
+		left:38px;
+		
+	}
+	
+	a:hover span{
+		visibility:visible;
+		opacity:1;
+		
+		
+	}
+</style>
+	<div  class="topBar">
+	
+		<a title="World Wide Web" href="#"><span>World Wide Web</span>WWW</a>
+	
+	</div>
+</body>
+</html>
